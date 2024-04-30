@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit the Kasa</title>
+
+    <style>
+        .container {
+            font-family: arial;
+            font-size: 30px;
+
+            justify-content: center;
+            display: flex;
+            
+            
+        }
+        
+        .hit {
+            justify-content: center;
+            
+        }
+
+    </style>
+
+    <script>
+        function hithim(){
+            document.getElementById("kasa").src = "./2.jpg"
+            setTimeout(function(){
+                document.getElementById("kasa").src = "./1.jpg"
+            }, 200);
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <div class="hit">
+            <h1>HIT THE KASA</h1>
+            <button type="button" onclick="hithim()">
+                <img id="kasa" src="./1.jpg">
+            </button>
+        </div>
+      </div>
+      
+    
+    
+</body>
+</html>
